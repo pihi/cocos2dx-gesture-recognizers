@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="..\Classes\Test\AppDelegate.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Test\ChildScene.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Gestures\GestureRecognizer.cpp">
+      <Filter>Gestures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Gestures\GestureRecognizerUtils.cpp">
+      <Filter>Gestures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Gestures\LongPressGestureRecognizer.cpp">
+      <Filter>Gestures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Test\MainScene.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Gestures\PanGestureRecognizer.cpp">
+      <Filter>Gestures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Test\PanScene.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Gestures\PinchGestureRecognizer.cpp">
+      <Filter>Gestures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Test\PinchScene.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Test\ScrollableMenu.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Test\ScrollViewCustom.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Test\ScrollViewScene.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Test\SwipeScene.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Gestures\SwipeGestureRecognizer.cpp">
+      <Filter>Gestures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Gestures\TapGestureRecognizer.cpp">
+      <Filter>Gestures</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h" />
+    <ClInclude Include="..\Classes\Test\AppDelegate.h">
+      <Filter>Test</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Test\ChildScene.h">
+      <Filter>Test</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Test\EnableScrollViewTest.h">
+      <Filter>Test</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Gestures\GestureRecognizer.h">
+      <Filter>Gestures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Gestures\GestureRecognizerUtils.h">
+      <Filter>Gestures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Gestures\LongPressGestureRecognizer.h">
+      <Filter>Gestures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Test\MainScene.h">
+      <Filter>Test</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Gestures\PanGestureRecognizer.h">
+      <Filter>Gestures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Test\PanScene.h">
+      <Filter>Test</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Gestures\PinchGestureRecognizer.h">
+      <Filter>Gestures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Test\PinchScene.h">
+      <Filter>Test</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Test\ScrollableMenu.h">
+      <Filter>Test</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Test\ScrollViewCustom.h">
+      <Filter>Test</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Test\ScrollViewScene.h">
+      <Filter>Test</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Test\SwipeScene.h">
+      <Filter>Test</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Gestures\SwipeGestureRecognizer.h">
+      <Filter>Gestures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Gestures\TapGestureRecognizer.h">
+      <Filter>Gestures</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="game.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Gestures">
+      <UniqueIdentifier>{f14ad061-4e32-452f-83b9-dc326de2fb2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test">
+      <UniqueIdentifier>{1b673db6-2b05-4fc3-ab31-7f2aa39302c7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

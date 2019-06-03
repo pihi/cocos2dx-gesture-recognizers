@@ -2,7 +2,7 @@
 
 bool ScrollableMenu::init()
 {
-    if (not Node::init()){
+    if (!Node::init()){
         return false;
     }
     visibleSize = Director::getInstance()->getVisibleSize();

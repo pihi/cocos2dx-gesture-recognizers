@@ -65,7 +65,7 @@ void SwipeScene::onLongPress(LongPressGestureRecognizer *recognizer)
     
     if (stato == GestureStatus::RECOGNIZED)
     {
-        if (sprite and nodeContainsThePoint(sprite, location))
+        if (sprite && nodeContainsThePoint(sprite, location))
         {
                 
             Device::vibrate(0.5f);
@@ -118,7 +118,7 @@ void SwipeScene::onSwipe(SwipeGestureRecognizer* recognizer)
                 break;
         }
         
-        if (sprite and move)
+        if (sprite && move)
             sprite->runAction(move);
         
         if (label)

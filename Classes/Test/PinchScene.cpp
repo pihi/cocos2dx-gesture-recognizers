@@ -58,8 +58,8 @@ void PinchScene::addGestureRecognizers()
     pinch->onPinch = CC_CALLBACK_1(PinchScene::onPinch, this);
     addChild(pinch, 0, PINCH_RECONIZER_NAME);
     
-    uint fingerCount = 1;
-    uint tapNumber   = 2;
+    unsigned int fingerCount = 1;
+    unsigned int tapNumber   = 2;
     auto tap = TapGestureRecognizer::create(fingerCount, tapNumber);
     tap->onTap = CC_CALLBACK_1(PinchScene::onTap, this);
     addChild(tap);
@@ -83,7 +83,7 @@ void PinchScene::onPinch(PinchGestureRecognizer* recognizer)
     {
         //CCLOG("Pinch Began");
         if (sprite)
-            filterTouch = not nodeContainsThePoint(sprite, location);
+            filterTouch = !nodeContainsThePoint(sprite, location);
     }
     else if (stato == GestureStatus::CHANGED)
     {
@@ -92,7 +92,7 @@ void PinchScene::onPinch(PinchGestureRecognizer* recognizer)
         auto trasl  = recognizer->getPinchTraslation();
         //CCLOG("Pinch factor: %f", factor);
         //CCLOG("Traslation: %f, %f", trasl.x, trasl.y);
-        if (sprite and not filterTouch) 
+        if (sprite && !filterTouch) 
         {
             sprite->setScale   (sprite->getScale()    * factor);
             sprite->setRotation(sprite->getRotation() + angle);

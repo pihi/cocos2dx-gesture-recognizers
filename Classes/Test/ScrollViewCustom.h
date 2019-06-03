@@ -22,7 +22,7 @@ using namespace cocos2d::ui;
 #define SAFE_REMOVE_FROM_PARENT(p) do {if(p) (p)->removeFromParent();} while(0)
 #define SAFE_REMOVE_FROM_PARENT_NULL(p) do {if(p) (p)->removeFromParent(); (p) = nullptr;} while(0)
 
-#define isScaleAllowed(newScale) ((newScale) >= SCROLL_VIEW_CUSTOM_MIN_ZOOM and (newScale) <= SCROLL_VIEW_CUSTOM_MAX_ZOOM)
+#define isScaleAllowed(newScale) ((newScale) >= SCROLL_VIEW_CUSTOM_MIN_ZOOM && (newScale) <= SCROLL_VIEW_CUSTOM_MAX_ZOOM)
 
 class ScrollViewCustom : public cocos2d::ui::ScrollView
 {

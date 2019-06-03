@@ -57,8 +57,8 @@ void ChildScene::addDebugButton()
 
 void ChildScene::addGestureRecognizers()
 {
-    uint fingerCount = 1;
-    uint tapNumber   = 2;
+    unsigned int fingerCount = 1;
+    unsigned int tapNumber   = 2;
     auto tap = TapGestureRecognizer::create(fingerCount, tapNumber);
     tap->onTap = CC_CALLBACK_1(ChildScene::onTap, this);
     tap->setDebugMode(true);

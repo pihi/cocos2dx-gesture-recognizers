@@ -45,7 +45,7 @@ void ScrollViewCustom::setTapToHomeEnabled(bool enabled)
 {
     if (enabled)
     {
-        if (not tapRecognizer)
+        if (!tapRecognizer)
             addTapGestureRecognizer();
     }
     else
@@ -83,7 +83,7 @@ float ScrollViewCustom::getContentScale()
 
 void ScrollViewCustom::setContentScale(float s) 
 {
-    if ( baseNode and isScaleAllowed(s) ) {
+    if (baseNode && isScaleAllowed(s)) {
         baseNode->setScale(s);
         privateSetInnerContainerSize(originalContainerSize * s); // inner size match with base node bounding box (considering the scale)
     }
@@ -113,7 +113,7 @@ void ScrollViewCustom::onPinch(PinchGestureRecognizer* recognizer)
     auto stato = recognizer->getStatus();
     if (stato == GestureStatus::BEGAN)
     {
-        if (not twoFingersPanEnabled) // no scroll during the pinch when single scroll finger is enabled
+        if (!twoFingersPanEnabled) // no scroll during the pinch when single scroll finger is enabled
             recognizer->setSwallowTouches(true);
     }
     if (stato == GestureStatus::CHANGED)
@@ -136,7 +136,7 @@ void ScrollViewCustom::onPinch(PinchGestureRecognizer* recognizer)
     }
     else if (stato == GestureStatus::RECOGNIZED)
     {
-        if (not twoFingersPanEnabled)
+        if (!twoFingersPanEnabled)
             recognizer->setSwallowTouches(false);
         
         // Fix to hide scroll bar after a pinch
@@ -152,7 +152,7 @@ void ScrollViewCustom::onTap(TapGestureRecognizer* recognizer)
     auto stato = recognizer->getStatus();
     if (stato == GestureStatus::RECOGNIZED)
     {
-        if (baseNode and baseNode->getNumberOfRunningActions() == 0)
+        if (baseNode && baseNode->getNumberOfRunningActions() == 0)
         {
             setTouchEnabled(false); // Scroll disabled during the zoom action
             auto enableTouch = CallFunc::create([this]{setScrollBarAutoHideEnabled(true);});
